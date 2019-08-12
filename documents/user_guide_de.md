@@ -4,28 +4,119 @@
 <div class="container-toc"></div>
 
 
-
 ## 1 Bei idealo.de registrieren
 
-idealo.de ist ein deutsches Preisportal und bietet Preisvergleiche mit Angeboten und Preisen, Testberichten sowie Preisbenachrichtigungen und Produktvergleichen. Weitere Informationen zu idealo.de finden Sie auf der Handbuchseite [idealo Direktkauf einrichten](https://knowledge.plentymarkets.com/omni-channel/multi-channel/idealo/idealo-einrichten). Um das Plugin für idealo.de einzurichten, registrieren Sie sich zunächst als Händler.
+idealo.de ist ein deutsches Preisportal und bietet Preisvergleiche mit Angeboten und Preisen, Testberichten sowie Preisbenachrichtigungen und Produktvergleichen. Mit plentymarkets können sowohl der idealo Preisvergleich als auch idealo Direktkauf genutzt werden. Mit idealo Direktkauf können Kund*innen deine Produkte direkt bei idealo kaufen, ohne in deinen Webshop zu wechseln. Weitere Informationen zu idealo.de findest du auf der Handbuchseite [idealo Direktkauf einrichten](https://knowledge.plentymarkets.com/omni-channel/multi-channel/idealo/idealo-einrichten).<br/>
 
-## 2 Das Format IdealoDE-Plugin in plentymarkets einrichten
+Um das Plugin für idealo.de einzurichten, registriere dich zunächst als Händler.
 
-→ **Hinweis**: **idealo Produkt-CSV prüfen**<br/> Zurzeit sind in plentymarkets nicht alle Spalten der idealo Produkt-CSV verfügbar. Prüfen Sie vor der Einrichtung, ob Sie Produktspalten benötigen, die in plentymarkets noch nicht verfügbar sind. In diesem Fall ist die Einrichtung von idealo zurzeit noch nicht möglich.<br/> Eine Übersicht der in plentymarkets verfügbaren Spalten erhalten Sie im Kapitel **Verfügbare Spalten der Exportdatei**.
+→ **Hinweis:** Kläre vor der Einrichtung in plentymarkets mit idealo, wie Artikeldaten übertragen werden sollen (Erstellung, Aktualisierung und Löschen von Artikeln auf idealo). Artikeldaten können über einen CSV-Import oder mit PWS 2.0 exportiert werden.<br/>
+Wenn du PWS 2.0 für den Artikelexport nutzt, werden Artikel einmal täglich auf idealo erstellt und gelöscht. Preise und Bestände werden alle 15 Minuten aktualisiert.<br/>
+Wenn du Artikel mit einer CSV-Datei über den elastischen Export zu idealo überträgst, können Artikel über die URL von idealo abgerufen werden.
 
-Mit der Installation dieses Plugins erhalten Sie das Exportformat **IdealoDE-Plugin**, mit dem Sie Daten über den elastischen Export zu idealo.de übertragen. Um dieses Format für den elastischen Export nutzen zu können, installieren Sie zunächst das Plugin **Elastic Export** aus dem plentyMarketplace, wenn noch nicht geschehen. 
 
-Sobald beide Plugins in Ihrem System installiert sind, kann das Exportformat **IdealoDE-Plugin** erstellt werden. Weitere Informationen finden Sie auf der Handbuchseite [Elastischer Export](https://knowledge.plentymarkets.com/basics/datenaustausch/elastischer-export).
+## 2 Assistent durchlaufen
+
+Durchlaufe zunächst den **idealo-Assistenten**, um die Grundeinstellungen für idealo in plentymarkets vorzunehmen. Mit dem **idealo-Assistenten** richtest du dein idealo-Konto in plentymarkets ein und nimmst Einstellungen zum Artikelxport und Auftragsimport von idealo Direktkauf vor.<br/>
+
+Den **idealo-Assistenten** findest du im Menü **System » Assistenten** im **Omni-Channel**-Ordner. Klicke auf den Assistenten, um den Assistenten zu starten.
+
+→ **Hinweis:** Es ist zwingend erforderlich, den **idealo-Assistenten** zu durchlaufen, wenn du deine Artikel über PWS 2.0 exportierst, da der automatische Artikelexport nur im idealo-Assistenten eingestellt werden kann.
+
+
+## 3 Auftragsherkunft aktivieren
+
+Damit du Artikel, Merkmale etc. mit dem idealo Preisvergleich verknüpfen kannst, muss im Menü **System » Systemeinstellungen » Aufträge » Auftragsherkunft** die Auftragsherkunft **idealo** aktiviert werden.
+
+#### Auftragsherkunft für idealo Preisvergleich aktivieren:
+
+1. Öffne das Menü **System » Systemeinstellungen » Aufträge » Auftragsherkunft**.
+2. Setze ein Häkchen bei **idealo**.
+3. **Speichere** die Einstellungen.
+
+Wenn du idealo Direktkauf nutzen möchtest, aktiviere zusätzlich die Auftragsherkunft **idealo Direktkauf**.
+
+
+## 4 Artikelverfügbarkeit einstellen
+
+Artikel, die du auf idealo verkaufen möchtest, müssen im Menü **Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten-ID** im Tab **Verfügbarkeit** aktiviert werden. Stelle die Artikelverfügbarkeit für idealo ein wie im Folgenden beschrieben.
+
+#### Artikelverfügbarkeit für idealo Preisvergleich einstellen:
+
+1. Öffne das Menü **Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten-ID » Tab: Einstellungen**.
+2. Aktiviere die Hauptvariante im Bereich **Verfügbarkeit**.
+3. Wechsele in das Tab **Verfügbarkeit**.
+4. Klicke im Bereich **Märkte** in das Auswahlfeld.<br/>
+→ Eine Liste mit allen verfügbaren Märkten wird angezeigt.
+5. Aktiviere die Option **idealo**.
+6. Aktiviere die Option **Web-API**.
+7. Klicke auf **Hinzufügen**.<br/>
+→ Der Marktplatz wird hinzugefügt.
+8. **Speichere** die Einstellungen.
+
+Die Verfügbarkeit für Varianten kann im Menü **Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten » Variante öffnen » Tab: Varianten-ID » Tab: Verfügbarkeit** angepasst werden.
+
+Wenn du idealo Direktkauf nutzen möchtest, aktiviere im Bereich Märkte zusätzlich die Option **idealo Direktkauf**.
+
+
+## 5 Verkaufspreis festlegen
+
+Gehe wie im Folgenden beschrieben vor, um für die Auftragsherkunft idealo einen Verkaufspreis festzulegen. Dieser Preis wird auf idealo angezeigt und ist für den idealo Preisvergleich und idealo Direktkauf gültig.
+
+#### Verkaufspreis für idealo festlegen:
+
+1. Öffne das Menü **System » Systemeinstellungen » Artikel » Verkaufspreise » Verkaufspreis öffnen » Tab: Einstellungen**.
+2. Setze ein Häkchen bei der Herkunft **idealo**.
+3. **Speichere** die Einstellungen.
+
+
+## 6 SKU manuell festlegen
+
+Im Menü **Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten-ID im Tab Verfügbarkeit** fügst du, wenn nötig, marktplatzspezifische SKUs hinzu.
+
+#### SKU hinzufügen:
+
+1. Öffne das Menü **Artikel » Artikel bearbeiten » Artikel öffnen » Tab: Varianten-ID » Tab: Einstellungen**.
+2. Wechsele in das Tab **Verfügbarkeit**.
+3. Klicke im Bereich **SKU** auf **Hinzufügen**.<br/>
+→ Das Bearbeitungsfenster **Neue SKU** wird angezeigt.
+4. Wähle die Herkunft **idealo**.
+5. Gib die SKU ein.
+6. Klicke auf **Hinzufügen**.<br/>
+→ Die SKU wird gespeichert und angezeigt.
+
+
+## 7 Artikelexport einrichten
+
+Artikel werden entweder mit dem automatischen Artikelexport oder mit CSV-Datei über den elastischen Export zu idealo übertragen.<br/>
+
+→ **Hinweis:** Kläre vor der Einrichtung in plentymarkets mit idealo, wie Artikeldaten übertragen werden sollen (Erstellung, Aktualisierung und Löschen von Artikeln auf idealo). Artikeldaten können über einen CSV-Import oder mit PWS 2.0 exportiert werden.<br/>
+Wenn du PWS 2.0 für den Artikelexport nutzt, werden Artikel einmal täglich auf idealo erstellt und gelöscht. Preise und Bestände werden alle 15 Minuten aktualisiert.<br/>
+Wenn du Artikel mit einer CSV-Datei über den elastischen Export zu idealo überträgst, können Artikel über die URL von idealo abgerufen werden.
+ 
+Wenn du PWS 2.0 zur automatischen Artikelübertragung verwendest, aktiviere den automatischen Artikelexport im **idealo-Assistenten**. Für den automatischen Artikelexport sind außerhalb des idealo-Assistenten keine weiteren Einstellungen nötig.<br/>
+
+Wenn du Artikel über den elastischen Export mit dem Datenformat IdealoDE zu idealo exportierst, müssen im Menü **Daten » Elastischer Export** weitere Einstellungen vorgenommen werden. Als Voraussetzung muss neben dem **ElasticExportIdealoDE**-Plugin auch das Plugin [Elastischer Export](https://marketplace.plentymarkets.com/plugins/channels/marktplaetze/elasticexport_4763) in deinem plentymarkets System installiert sein. Lege zunächst das Datenformat IdealoDE an und übermittele im Anschluss die URL zu idealo.
+
+### 7.1 Das Format IdealoDE-Plugin in plentymarkets einrichten
+
+→ **Hinweis:** Die in diesem Kapitel beschriebenen Einstellungen sind nur notwendig, wenn du Artikel über den elastischen Export zu idealo überträgst.
+
+→ **Hinweis**: **idealo Produkt-CSV prüfen**<br/> Zurzeit sind in plentymarkets nicht alle Spalten der idealo Produkt-CSV verfügbar. Prüfe vor der Einrichtung, ob du Produktspalten benötigst, die in plentymarkets noch nicht verfügbar sind. In diesem Fall ist die Einrichtung von idealo zurzeit noch nicht möglich.<br/> Eine Übersicht der in plentymarkets verfügbaren Spalten erhältst du im Kapitel **Verfügbare Spalten der Exportdatei**.
+
+Mit der Installation dieses Plugins erhältst du das Exportformat **IdealoDE-Plugin**, mit dem du Daten über den elastischen Export zu idealo.de überträgst. Um dieses Format für den elastischen Export nutzen zu können, installiere zunächst das Plugin **Elastic Export** aus dem plentyMarketplace, wenn noch nicht geschehen. 
+
+Sobald beide Plugins in deinem System installiert sind, kann das Exportformat **IdealoDE-Plugin** erstellt werden. Weitere Informationen findest du auf der Handbuchseite [Elastischer Export](https://knowledge.plentymarkets.com/daten/daten-exportieren/elastischer-export).
 
 Neues Exportformat erstellen:
 
-1. Öffnen Sie das Menü **Daten » Elastischer Export**.
-2. Klicken Sie auf **Neuer Export**.
-3. Nehmen Sie die Einstellungen vor. Beachten Sie dazu die Erläuterungen in Tabelle 1.
-4. **Speichern** Sie die Einstellungen.
+1. Öffne das Menü **Daten » Elastischer Export**.
+2. Klicke auf **Neuer Export**.
+3. Nimm die Einstellungen vor. Beachte dazu die Erläuterungen in Tabelle 1.
+4. **Speichere** die Einstellungen.
 → Eine ID für das Exportformat **IdealoDE-Plugin** wird vergeben und das Exportformat erscheint in der Übersicht **Exporte**.
 
-In der folgenden Tabelle finden Sie Hinweise zu den einzelnen Formateinstellungen und empfohlenen Artikelfiltern für das Format **IdealoDE-Plugin**.
+In der folgenden Tabelle findest du Hinweise zu den einzelnen Formateinstellungen und empfohlenen Artikelfiltern für das Format **IdealoDE-Plugin**.
 
 | **Einstellung**                                    | **Erläuterung** |
 | :---                                               | :--- |
@@ -65,7 +156,9 @@ In der folgenden Tabelle finden Sie Hinweise zu den einzelnen Formateinstellunge
 | **MwSt.Hinweis**                                   | Diese Option ist für dieses Format nicht relevant. |
 | **Artikelverfügbarkeit**                           | Option **überschreiben** aktivieren und in die Felder **1** bis **10**, die die ID der Verfügbarkeit darstellen, Artikelverfügbarkeiten eintragen. Somit werden die Artikelverfügbarkeiten, die im Menü **System » Artikel » Verfügbarkeit** eingestellt wurden, überschrieben. |
 
-## 3 Verfügbare Spalten der Exportdatei
+_Tab. 1: Einstellungen für das Exportformat IdealoDE_
+
+### 7.2 Verfügbare Spalten der Exportdatei
 
 | **Spaltenbezeichnung**  | **Erläuterung** |
 | :---                    | :--- |
@@ -98,6 +191,21 @@ In der folgenden Tabelle finden Sie Hinweise zu den einzelnen Formateinstellunge
 | **disposalPrice**       | **Voraussetzung**: checkoutApproved ist true und fulfillmentType ist Spedition.<br/> Merkmal vom Typ Text, Auswahl oder Kommazahl und der Verknüpfung zum idealo Direktkauf-Merkmal disposalPrice. |
 | **Zahlungsarten**       | **Pflichtfeld**: (Mindestens eine Zahlungsart)<br/> Es werden die Zahlungsarten gemäß der Formateinstellung **Versandkosten** in einer eigenen Spalte übermittelt. |
 
-## 4 Lizenz
+_Tab. 2: Spalten der Exportdatei_
 
-Das gesamte Projekt unterliegt der GNU AFFERO GENERAL PUBLIC LICENSE – weitere Informationen finden Sie in der [LICENSE.md](https://github.com/plentymarkets/plugin-elastic-export-idealo-de/blob/master/LICENSE.md).
+
+## 8 Merkmale erstellen
+
+Mit [Merkmalen](https://knowledge.plentymarkets.com/artikel/artikel-verwalten#480) verknüpfst du bestimmte Eigenschaften, die du für die Einrichtung des Marktplatzes idealo Direktkauf benötigst, mit deinen Artikeln. Mit Merkmalen überträgst du Artikeleigenschaften, Versandarten und Gebühren an idealo Direktkauf.
+
+→ **Hinweis: Bestimmte Merkmale können nur mit Plugin-Version 2.0 verwendet werden**<br/>
+Die Merkmale **DeliveryComment**, **DepositFee**, **DisposalPrice**, **EnergyClass**, **FreeReturnDays**, **Gender**, **Material** und **Replica** können nur verwendet werden, wenn die Plugin-Version 2.0 in deinem plentymarkets System installiert ist. Außerdem können diese Merkmale nur in Verbindung mit dem automatischen Artikelexport zu idealo Direktkauf übertragen werden. Den automatischen Artikelexport aktivierst du im **idealo-Assistenten** im Schritt **Automatische Datenübertragung**.<br/>
+Wenn du den automatischen Artikelexport im idealo-Assistenten aktiviert hast, kannst du alle idealo-Merkmale übertragen.<br/>
+Wenn du deine Artikel per CSV-Datei mit dem elastischen Export überträgst, kannst du nur das Merkmal **FulfillmentType** verwenden.
+
+Wie du Merkmale für idealo Direktkauf erstellst und verknüpfst, ist im Kapitel [idealo Direktkauf: Merkmale erstellen](https://knowledge.plentymarkets.com/maerkte/idealo/idealo-einrichten#660) auf der Handbuchseite [idealo einrichten](https://knowledge.plentymarkets.com/maerkte/idealo/idealo-einrichten) beschrieben.
+
+
+## 9 Lizenz
+
+Das gesamte Projekt unterliegt der GNU AFFERO GENERAL PUBLIC LICENSE – weitere Informationen findest du in der [LICENSE.md](https://github.com/plentymarkets/plugin-elastic-export-idealo-de/blob/master/LICENSE.md).
