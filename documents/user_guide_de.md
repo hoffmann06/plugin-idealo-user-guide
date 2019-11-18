@@ -77,7 +77,7 @@ Gehe wie im Folgenden beschrieben vor, um für die Auftragsherkunft idealo einen
 2. Setze ein Häkchen bei der Herkunft **idealo**.
 3. **Speichere** die Einstellungen.
 
-→ **Hinweis:** Wenn du für idealo einen Mindestpreis angeben möchtest, musst du mindestens zwei Verkaufspreise für idealo festlegen, einen Mindestpreis und einen normalen Verkaufspreis.<br/>
+→ **Hinweis:** Wenn du für idealo einen Mindestpreis angeben möchtest, musst du mindestens zwei Verkaufspreise für idealo festlegen, einen Mindestpreis und einen normalen Verkaufspreis. Außerdem muss der Mindestpreis vom Typ **Aktionspreis** sein und mit der Herkunft **idealo Direktkauf** verknüpft werden.<br/>
 Welcher Preis als Mindestpreis an idealo übertragen werden soll, legst du im idealo-Assistenten im Schritt **Artikeldaten** mit der Einstellung **Welcher Preis soll als Mindestpreis an idealo übertragen werden?** fest.
 
 
