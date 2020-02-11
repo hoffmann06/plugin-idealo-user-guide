@@ -141,6 +141,8 @@ Items can be transferred to idealo with the automatic item export via API (PWS 2
 
 Information about the different types of data transfer is available in the following table:
 
+_Table 1: idealo data transfer_
+
 |**Item export via API**        |**Item export via elastic export** |
 |:---                           |:--- |
 |Item data export via interface |Item data export via CSV file |
@@ -190,6 +192,8 @@ Set up the export format **IdealoDE** so that your items can be exported to idea
 
 The following table lists details for settings, format settings and recommended item filters for the format **IdealoDE plugin**.
 
+_Table 2: Format settings for **IdealoDE**_
+
 | **Setting**                                           | **Explanation** |
 | :---                                                  | :--- |
 | **Settings**                                          | |
@@ -233,6 +237,8 @@ _Tab. 1: Settings for the export format IdealoDE_
 ### 8.2.2 Available columns for the export file
 <a name="Available columns for the export file"></a>
 
+_Table 3: Columns of the export file_
+
 | **Column description**  | **Explanation** |
 | :---                    | :--- |
 | **article_id**          | **Required**<br/> The **SKU** of the item. For all items which are configured for **idealo Checkout** a SKU will be generated for **idealo Checkout**. |
@@ -264,8 +270,6 @@ _Tab. 1: Settings for the export format IdealoDE_
 | **disposalPrice**       | **Requirement**: checkoutApproved is true and fulfillmentType is "Spedition".<br/> Property of type **Text**, **Selection** or **float** and the link to the idealo Checkout property **disposalPrice**. |
 | **Zahlungsarten**       | **Required**: (min. one payment method)<br/> All payment methods will be exported, according to the format setting **Shipping costs** in its own column. |
 
-_Tab. 2: Columns of the export file_
-
 
 ## 9 Activating the payment method **idealo Checkout**
 <a name="Activating the payment method idealo Direktkauf"></a>
@@ -287,6 +291,8 @@ Activate the payment method **idealo Checkout**. This allows payments to be made
 5. Carry out the settings as desired. Pay attention to the explanations given in table 2.
 6. Place a check mark next to the option **Active**.
 7. **Save** the settings.
+
+_Table 4: Settings for idealo payment method_
 
 |**Setting**                        |**Explanation** |
 |:---                               |:--- |
@@ -476,6 +482,8 @@ Set up an [event procedure](https://knowledge.plentymarkets.com/en/automation/ev
 8. **Save** the settings.<br/>
 → The event procedure is saved.
 
+_Table 5: Event procedure for automatically sending order confirmations to idealo_
+
 |**Setting** |**Option**                                    |**Selection** |
 |:---        |:---                                          |:--- |
 |Event       |**Order generation: New order**               | |
@@ -500,6 +508,8 @@ Set up an [event procedure](https://knowledge.plentymarkets.com/en/automation/ev
 7. Place a check mark next to the option **Active**.
 8. **Save** the settings.<br/>
 → The event procedure is saved.
+
+_Table 5: Event procedure for automatically sending shipping confirmations to idealo_
 
 |**Setting** |**Option**                                          |**Selection** |
 |:---        |:---                                                |:--- |
@@ -526,6 +536,8 @@ Set up an [event procedure](https://knowledge.plentymarkets.com/en/automation/ev
 8. **Save** the settings.<br/>
 → The event procedure is saved.
 
+_Table 6: Event procedure for automatically sending returns to idealo_
+
 |**Setting** |**Option**                         |**Selection** |
 |:---        |:---                               |:--- |
 |Event       |**Order generation: New return**   | |
@@ -551,6 +563,8 @@ Set up an [event procedure](https://knowledge.plentymarkets.com/en/automation/ev
 8. Place a check mark next to the option **Active**.
 9. **Save** the settings.<br/>
 → The event procedure is saved.
+
+_Table 7: Event procedure for automatically sending cancellations to idealo_
 
 |**Setting** |**Option**                             |**Selection** |
 |:---        |:---                                   |:--- |

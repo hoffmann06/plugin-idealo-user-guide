@@ -139,6 +139,8 @@ Artikel werden entweder mit dem automatischen Artikelexport über eine API (PWS 
 
 Informationen zu den verschiedenen Arten der Datenübertragung findest du in der folgenden Tabelle.
 
+_Tab. 1: Datenübertragung bei idealo_
+
 |**Artikelexport per API**                    |**Artikelexport mit elastischem Export** |
 |:---                                         |:--- |
 |Artikeldatenübertragung per Schnittstelle    |Artikeldatenübertragung per CSV-Datei |
@@ -188,6 +190,8 @@ Damit deine Artikel mit dem elastischen Export zu idealo übertragen werden kön
 
 In der folgenden Tabelle findest du Hinweise zu den einzelnen Formateinstellungen und empfohlenen Artikelfiltern für das Format **IdealoDE-Plugin**.
 
+_Tab. 2: Formateinstellungen für **IdealoDE**_
+
 | **Einstellung**                                    | **Erläuterung** |
 | :---                                               | :--- |
 | **Einstellungen**                                  | |
@@ -231,6 +235,8 @@ _Tab. 1: Einstellungen für das Exportformat IdealoDE_
 ### 8.2.2 Verfügbare Spalten der Exportdatei
 <a name="Verfügbare Spalten der Exportdatei"></a>
 
+_Tab. 3: Spalten der Exportdatei_
+
 | **Spaltenbezeichnung**  | **Erläuterung** |
 | :---                    | :--- |
 | **article_id**          | **Pflichtfeld**<br/> Die SKU des Artikels. Bei Artikeln, die für idealo Direktkauf freigegeben wurden, wird hier eine SKU für idealo Direktkauf ausgegeben. |
@@ -262,8 +268,6 @@ _Tab. 1: Einstellungen für das Exportformat IdealoDE_
 | **disposalPrice**       | **Voraussetzung**: checkoutApproved ist true und fulfillmentType ist Spedition.<br/> Merkmal vom Typ Text, Auswahl oder Kommazahl und der Verknüpfung zum idealo Direktkauf-Merkmal disposalPrice. |
 | **Zahlungsarten**       | **Pflichtfeld**: (Mindestens eine Zahlungsart)<br/> Es werden die Zahlungsarten gemäß der Formateinstellung **Versandkosten** in einer eigenen Spalte übermittelt. |
 
-_Tab. 2: Spalten der Exportdatei_
-
 
 ## 9 Zahlungsart **idealo Direktkauf** aktivieren
 <a name="Zahlungsart idealo Direktkauf aktivieren"></a>
@@ -285,6 +289,8 @@ Damit Zahlungen für Aufträge von idealo Direktkauf durchgeführt und in deinem
 5. Nimm die gewünschten Einstellungen vor. Beachte dazu die Erläuterungen in der folgenden Tabelle.
 6. Setze ein Häkchen bei der Option **Aktiv**.
 7. **Speichere** die Einstellungen.
+
+_Tab. 4: Einstellungen für idealo-Zahlungsart_
 
 |**Einstellung**                      |**Erläuterung** |
 |:---                                 |:--- |
@@ -475,6 +481,8 @@ Richte eine [Ereignisaktion](https://knowledge.plentymarkets.com/automatisierung
 8. **Speichere** die Einstellungen.<br/>
 → Die Ereignisaktion wird gespeichert.
 
+_Tab. 5: Ereignisaktion zum automatischen Senden von Auftragsbestätigungen an idealo_
+
 |**Einstellung** |**Option**                                         |**Auswahl** |
 |:---            |:---                                               |:--- |
 |Ereignis        |**Auftragsanlage: Neuer Auftrag**                  | |
@@ -499,6 +507,8 @@ Richte eine [Ereignisaktion](https://knowledge.plentymarkets.com/automatisierung
 7. Setze ein Häkchen bei **Aktiv**.
 8. **Speichere** die Einstellungen.<br/>
 → Die Ereignisaktion wird gespeichert.
+
+_Tab. 5: Ereignisaktion zum automatischen Senden von Versandbestätigungen an idealo_
 
 |**Einstellung** |**Option**                                        |**Auswahl** |
 |:---            |:---                                              |:--- |
@@ -525,6 +535,8 @@ Richte eine [Ereignisaktion](https://knowledge.plentymarkets.com/automatisierung
 8. **Speichere** die Einstellungen.<br/>
 → Die Ereignisaktion wird gespeichert.
 
+_Tab. 6: Ereignisaktion zum automatischen Senden von Retouren an idealo_
+
 |**Einstellung** |**Option**                             |**Auswahl** |
 |:---            |:---                                   |:--- |
 |Ereignis        |**Auftragsanlage: Neue Retoure**       | |
@@ -550,6 +562,8 @@ Richte eine [Ereignisaktion](https://knowledge.plentymarkets.com/automatisierung
 8. Setze ein Häkchen bei **Aktiv**.
 9. **Speichere** die Einstellungen.<br/>
 → Die Ereignisaktion wird gespeichert.
+
+_Tab. 7: Ereignisaktion zum automatischen Senden von Stornierungen an idealo_
 
 |**Einstellung** |**Option**                                |**Auswahl** |
 |:---            |:---                                      |:--- |
