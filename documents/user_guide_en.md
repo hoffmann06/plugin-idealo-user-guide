@@ -1,5 +1,5 @@
 
-# 2.0 plugin user guide
+# idealo 2.0 plugin user guide
 
 <div class="container-toc"></div>
 
