@@ -21,7 +21,7 @@ Um idealo in plentymarkets einrichten zu können, registriere dich zunächst bei
 
 <div class="alert alert-warning" role="alert">
 <b>Hinweis: Artikeldatenexport</b><br/> Kläre vor der Einrichtung in plentymarkets mit idealo, wie Artikeldaten übertragen werden sollen (Erstellung, Aktualisierung und Löschen von Artikeln auf idealo). Artikeldaten können mit einer CSV-Datei oder per API (PWS 2.0-Schnittstelle) exportiert werden.<br/>
-Wenn du PWS 2.0 für den Artikelexport nutzt, werden Artikel einmal täglich auf idealo erstellt und gelöscht. Preise und Bestände werden alle 15 Minuten aktualisiert.<br/>
+Wenn du PWS 2.0 für den Artikelexport nutzt, werden Artikel einmal täglich auf idealo erstellt. Preise und Bestände werden alle 15 Minuten aktualisiert.<br/>
 Wenn du Artikel mit einer CSV-Datei über den elastischen Export zu idealo überträgst, können Artikel über eine URL von idealo abgerufen werden.
  </ul>
 </div>
@@ -154,7 +154,7 @@ _Tab. 1: Datenübertragung bei idealo_
 
 Wenn du deine Artikel per Schnittstelle automatisch zu idealo übertragen möchtest, durchlaufe den Assistenten **idealo Grundeinstellungen** im Menü **Einrichtung » Assistenten » Omni-Channel** und aktiviere den automatischen Artikeldatenexport. Für den automatischen Artikelexport sind außerhalb des idealo-Assistenten keine weiteren Einstellungen in plentymarkets nötig.<br/>
 
-Mit dieser Art der Datenübertragung werden Artikel einmal täglich auf idealo erstellt und gelöscht. Preise und Bestände werden alle 15 Minuten aktualisiert.
+Mit dieser Art der Datenübertragung werden Artikel einmal täglich auf idealo erstellt und gelöscht (DHJ:Löschen ist jede 15min möglich). Preise und Bestände werden alle 15 Minuten aktualisiert.
 
 
 ### 8.2 Artikelexport mit elastischem Export
