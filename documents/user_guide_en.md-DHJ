@@ -8,7 +8,7 @@
 
 idealo started business in 2000 with the vision of helping users to make the right choices when buying products online and, now counting 50,000 sellers and 18 million users per month, has become one of Germany's most important e-commerce websites.<br/>
 
-With idealo Checkout, idealo offers a strong sales channel. The "Zum Kauf" (Buy now) button allows users to order a product directly from idealo, using a fully integrated checkout function. The sellers remain the contractual partners and take care of fulfilment as usual.<br/>
+With idealo Checkout, idealo offers a strong sales channel. The "Zum Kauf" (Buy now) button allows users to order a product directly on idealo.de, using a fully integrated checkout function. The sellers remain the contractual partners and take care of fulfilment as usual.<br/>
 
 #### idealo price comparison and idealo Checkout
 
@@ -21,13 +21,13 @@ You have to register as a seller with idealo to set up the market in plentymarke
 
 <div class="alert alert-warning" role="alert">
 <b>Note: Item data export</b><br/> Inform idealo about how item data should be transferred before setting up idealo in plentymarkets (creating, updating, and deleting items on idealo). Item data can either be exported with a CSV file or via API (PWS 2.0 interface).<br/>
-If you export your items with PWS 2.0, items will be created and deleted on idealo once a day. Prices and stock are updated every 15 minutes.<br/>
+If you export your items with PWS 2.0, items will be created on idealo once a day. Prices and stock are updated every 15 minutes. (DHJ: Add Articles can also be deleted every 15min)<br/>
 If you export your items with a CSV file using the elastic export, your items can be retrieved by idealo via URL.
  </ul>
 </div>
 
 
-#### 2.1 Installing the Elastic Export plugin
+#### 2.1 Installing the Elastic Export plugin (is it also necessary in connection with the API?) 
 
 In order to use the idealo plugin, you have to install the [Elastic Export](https://marketplace.plentymarkets.com/en/plugins/sales/marktplaetze/elasticexport_4763) plugin first. You can download the plugin in the [plentyMarketplace](https://marketplace.plentymarkets.com/en).
 
@@ -48,13 +48,13 @@ Depending on whether you only want to use the idealo price comparison or whether
 
 → **Settings for idealo Checkout:**
 - **Basic settings:** Go through the **idealo Basic settings** assistant in the **Setup » Assistants » Omni-Channel** menu.
-- **Item export:** Set up the [automatic item export](#Item export via API) or the [item export via CSV file](#Item export with elastic export), je nachdem, depending on how you want to export your items to idealo.
+- **Item export:** Set up the [automatic item export](#Item export via API) or the [item export via CSV file](#Item export with elastic export), depending on how you want to export your items to idealo.
 - **Order referrer:** In addition to the order referrer **idealo**, also activate the [order referrer](#Activating the order referrer) **idealo Checkout** in the **Setup » Orders » Order referrer** menu.
 - **Item availability:** In addition to the option **idealo**, also activate the [availability](#Setting the item availability) **idealo Checkout** in the **Item » Edit item » Open item » Tab: Variation ID » Tab: Availability** menu in the **Markets** section.
 - **Sales price:** Set up a [sales price](#Defining a sales price).
 - **SKU:** Add [SKUs](#Defining SKU manually) if needed.
 - **Payment method:** Activate the [payment method](#Activating the payment method idealo Direktkauf) **idealo Direktkauf**.
-- **Merkmale:** Create [characteristics](#Creating characteristics) for idealo Checkout. With characteristics, you can transfer item properties, shipping methods and charges to idealo Checkout.
+- **Merkmale:**(is there an English word?) Create [characteristics](#Creating characteristics) for idealo Checkout. With characteristics, you can transfer item properties, shipping methods and charges to idealo Checkout.
 - **Event procedures:** Set up [event procedures](#Setting up event procedures) to automatically inform idealo Checkout about changes in the order status.
 
 
@@ -108,8 +108,8 @@ Proceed as described below to define a sales price for the order referrer idealo
 3. **Save** the settings.
 
 <div class="alert alert-warning" role="alert">
-<b>Note: Minimum price</b><br/>If you want to use a minimum price for idealo, then you have to define at least two sales prices for idealo: a minimum price and a standard sales price. The minimum price must have the price type <b>Special offer</b> and must be activated to the referrer <b>idealo Direktkauf</b>.<br/>
-Which price should be transferred to idealo as minimum price is defined with the setting <b>Which price would you like to transfer to idealo as minimum price?</b> in the <b>Item data</b> step of the idealo assistant.
+<b>Note: Minimum price</b><br/>If you want to use a minimum price for the "price range" feature for idealo Checkout, then you have to define at least two sales prices for idealo: a minimum price and a standard sales price. The minimum price must have the price type <b>Special offer</b> and must be activated to the referrer <b>idealo Direktkauf</b>.<br/>
+Which price should be transferred to idealo as minimum price is defined with the setting <b>Which price would you like to transfer to idealo as minimum price?</b> in the <b>Item data</b> step of the idealo assistant. Please also remember to enable the feature in idealo Business (https://business.idealo.com/en/direktkauf-einstellungen) and select "Price Range per offer".
  </ul>
 </div>
 
@@ -146,7 +146,7 @@ _Table 1: idealo data transfer_
 |**Item export via API**        |**Item export via elastic export** |
 |:---                           |:--- |
 |Item data export via interface |Item data export via CSV file |
-|Daily item updates             |Retrieval of item data via URL that is saved at idealo |
+|Daily item updates (creation?)             |Retrieval of item data via URL that is saved at idealo |
 |Price updates every 15 minutes |Time interval for retrieval of item data is defined by idealo |
 |Stock updates every 15 minutes | |
 
@@ -154,9 +154,9 @@ _Table 1: idealo data transfer_
 ### 8.1 Item export via API (PWS 2.0 interface)
 <a name="Item export via API"></a>
 
-If you want to transfer your items to idealo via API, gp through the **idealo Basic settings** assistant in the **Setup » Assistants » Omni-Channel** menu and activate the automatic item data export. Apart from the assistant, no further settings are required to set up the automatic item export in plentymarkets.<br/>
+If you want to transfer your items to idealo via API, go through the **idealo Basic settings** assistant in the **Setup » Assistants » Omni-Channel** menu and activate the automatic item data export. Apart from the assistant, no further settings are required to set up the automatic item export in plentymarkets.<br/>
 
-If you transfer your items via API, items will be created and deleted at idealo once per day. Prices and stock will be updated every 15 minutes.
+If you transfer your items via API, items will be created at idealo once per day. Prices and stock will be updated every 15 minutes.(and offers can be deleted every 15min)
 
 
 ### 8.2 Item export with elastic export
@@ -351,7 +351,7 @@ Next, you have to link the characteristic to the item in the **Item » Edit item
 
 ### 10.2 Creating characteristics for shipping methods
 
-With idealo Checkout, the customer buys the items directly at idealo and you have to send shipping information to idealo Checkout. If you ship your items with a parcel service, a shipping company, via letter or via download, this mandatory information is transferred to idealo with a property. If the order is carried out by a shipping company, the customer has to enter their phone number during the order process in order to arrange a delivery date.
+With idealo Checkout, the customer buys the items directly at idealo and you have to send shipping information to idealo Checkout. If you ship your items with a parcel service, a shipping company, via letter or via download, this mandatory information is transferred to idealo with a characteristic. If the order is carried out by a shipping company, the customer has to enter their phone number during the order process in order to arrange a delivery date.
 
 Proceed as described below to create the characteristic **FulfillmentType**. This characteristic indicates whether you use the shipping method **shipping company**, **parcel service**, **letter**, or **download**.
 
@@ -360,7 +360,7 @@ Proceed as described below to create the characteristic **FulfillmentType**. Thi
 1. Go to **Setup » Item » Characteristics » Tab: New characteristic**.
 2. Enter the **Name (internal)**.
 3. Select **No** from the characteristic type drop-down list.
-4. Select the characteristic **FulfillmentType** for **idealo Direktkauf property**.<br/>
+4. Select the characteristic **FulfillmentType** for **idealo Direktkauf property**.<br/>(nennt ihr es characteristic oder property? Es wird aktuell beides verwendet)
 → A drop-down list appears.
 5. Select a value from the drop-down list, depending on the shipping type. The values **Spedition** (shipping company), **Paketdienst** (parcel service), **Brief** (letter), and **Download** (download) are available.
 6. **Save** the settings.
@@ -369,7 +369,7 @@ Next, you have to link the characteristic to the item in the **Item » Edit item
 
 #### Further properties for shipping methods
 
-For items which have the shipping method **shipping company**, it is also possible to transfer the additional services **TwoManHandlingPrice** and **DisposalPrice** to idealo Checkout. DisposalPrice can only be used in combination with **TwoManHandlingPrice**. That means you have to create the characteristic **TwoManHandlingPrice** as well as the property **DisposalPrice** and link them to the item. In both cases, select **decimal number** as the characteristic type. Go to **Item » Edit item » Open item » Open variation » Tab: Properties** and enter the surcharge for the additional service with two decimal places behind the decimal separator. Use a period for the decimal separator (19.99).
+For items which have the shipping method **shipping company**, it is also possible to transfer the additional services **TwoManHandlingPrice** and **DisposalPrice** to idealo. DisposalPrice can only be used in combination with **TwoManHandlingPrice**. That means you have to create the characteristic **TwoManHandlingPrice** as well as the property **DisposalPrice** and link them to the item. In both cases, select **decimal number** as the characteristic type. Go to **Item » Edit item » Open item » Open variation » Tab: Properties** and enter the surcharge for the additional service with two decimal places behind the decimal separator. Use a period for the decimal separator (19.99).
 
 ### 10.3 Creating a characteristic for delivery comments
 
