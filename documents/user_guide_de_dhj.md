@@ -107,7 +107,7 @@ Gehe wie im Folgenden beschrieben vor, um für die Auftragsherkunft idealo einen
 
 <div class="alert alert-warning" role="alert">
 <b>Hinweis: Mindestpreis</b><br/>Wenn du für die idealo-Preisspanne einen Mindestpreis angeben möchtest, musst du mindestens zwei Verkaufspreise für idealo festlegen, einen Mindestpreis und einen normalen Verkaufspreis. Außerdem muss der Mindestpreis vom Typ <b>Aktionspreis</b> sein und mit der Herkunft <b>idealo Direktkauf</b> verknüpft werden.<br/>
-Welcher Preis als Mindestpreis für die idealo-Preisspanne an idealo übertragen werden soll, legst du im idealo-Assistenten im Schritt <b>Artikeldaten</b> mit der Einstellung <b>Welcher Preis soll als Mindestpreis an idealo übertragen werden?</b> fest. 
+Welcher Preis als Mindestpreis für die idealo-Preisspanne an idealo übertragen werden soll, legst du im idealo-Assistenten im Schritt <b>Artikeldaten</b> mit der Einstellung <b>Welcher Preis soll als Mindestpreis an idealo übertragen werden?</b> fest. Um das Feature zu nutzen musst du die Funktion im idealo Business (https://business.idealo.com/de/direktkauf-einstellungen) einschalten, indem du "Preisspanne pro Angebot" auswählst. 
  </ul>
 </div>
 
